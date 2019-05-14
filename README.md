@@ -6,7 +6,12 @@ A set of examples running in [Swift on AWS Lambda](https://github.com/wqfan/Swif
 ## Build your function
 **Note:** to build your function, you need to have docker installed on your machine and have the path to `SwiftOnLambda-Functions` configured in docker's "Preferences... -> File Sharing".
 
-After cloning the repository, change your current directory to `SwiftOnLambda-Functions`.
+After cloning the repository, change your current directory to the example function folder:
+
+```
+# build the HelloWorld example
+cd SwiftOnLambda-Functions/HelloWorld
+```
 
 Then run:
 
