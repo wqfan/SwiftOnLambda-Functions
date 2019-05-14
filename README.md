@@ -1,3 +1,28 @@
 # Swift on AWS Lambda - Function examples
 
 A set of examples running in [Swift on AWS Lambda](https://github.com/wqfan/SwiftOnLambda) custom runtime.
+
+
+## Build your function
+**Note:** to build your function, you need to have docker installed on your machine and have the path to `SwiftOnLambda-Functions` configured in docker's "Preferences... -> File Sharing".
+
+After cloning the repository, change your current directory to `SwiftOnLambda-Functions`.
+
+Then run:
+
+```
+docker run \
+    --dns 8.8.8.8 \
+    --rm \
+    --volume $(pwd):/Function \
+    --workdir /Function \
+    swift:5.0.1 \
+    swift build -c release
+```
+
+Finally pack your function following the compilation:
+```
+zip --junk-paths function.zip .build/x86_64-unknown-linux/release/HelloWorld
+```
+
+Note that when you upload the function, the function handler is `HelloWrold` in this case.
