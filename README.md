@@ -30,4 +30,4 @@ Finally pack your function following the compilation:
 zip --junk-paths function.zip .build/x86_64-unknown-linux/release/HelloWorld
 ```
 
-Note that when you upload the function, the function handler is `HelloWrold` in this case.
+Note that when you upload the function, the function handler is `HelloWorld` in this case.
