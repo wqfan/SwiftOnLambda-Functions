@@ -1,5 +1,7 @@
 # Swift on AWS Lambda - Function examples
 
+> ⚠️ This has been archived in favor of the community support: https://github.com/swift-server/swift-aws-lambda-runtime
+
 A set of examples running in [Swift on AWS Lambda](https://github.com/wqfan/SwiftOnLambda) custom runtime.
 
 
